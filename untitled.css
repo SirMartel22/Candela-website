@@ -1,0 +1,93 @@
+/*  Contact Section styles*/
+  .containerr{
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #1F1F1E;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+     .containerr h2{
+      color: #FB6D10;
+      opacity: 70%;
+     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: #fff;
+      opacity: 60%;
+    }
+
+    .contact-info{
+      color: #fff;
+      opacity: 60%;
+    }
+
+    input, textarea {
+      margin-bottom: 16px;
+      padding: 8px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      background-color: #56564c;
+    }
+
+    .containerr button {
+      width: 20%;
+      margin-left: 40%;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+/*
+    button:hover {
+      background-color: none;
+      opacity: 70%;
+    }*/
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .map {
+      margin-top: 20px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #0056b3;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .animated {
+      animation: fadeIn 1s ease-in-out;
+    }

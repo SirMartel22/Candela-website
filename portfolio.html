@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Candela Gallery </title>
+	 <link rel="stylesheet" type="text/css" href="index.css">
+	 <link rel="stylesheet" type="text/css" href="css/all.css">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="video.css">
+
+</head>
+
+
+<body>
+
+ <!-- The navigation and the banner section on the same background image -->
+    <div id="container">
+
+        <picture class="bg-image">
+          <source src="" type="image/webp">
+            <img src="img.jpeg">
+        </picture>
+
+       
+        <div class="main-navbar">
+        <div class="logo">
+          <img src="logo.jpeg">
+        </div>
+         <div class="navbar" id="navbar">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="#">Portfolio</a>
+          <a href="javascript:void(0);" class="menu-bar" onclick="toggleNavbar()">&#9776;</a>
+        </div>
+          
+      </div>
+
+      <div class="content">
+          <!-- Your page content goes here -->
+          <h1> Candela Light and Brands </h1>
+          <p> Illuminate your event with candela. unlease the power of light</p>
+          <button>Learn More</button>
+      </div>
+
+    </div>
+
+
+  <!-- The navigation and the banner section on the same background image -->
+<!-- Video Gallery -->
+<!-- Past Work -->
+
+   <h1 class="galleryHeading"> Live Video Portfolio </h1>
+<div class="row">
+  <div class="video-container">
+    <!-- Replace 'VIDEO_ID_1' with the actual YouTube video ID -->
+    <iframe width="560" height="400" src="https://www.youtube.com/embed/_-jMR9hLHIA?si=QZqOBmTxHEFykhrB&amp;controls=0&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-container">
+    <!-- Replace 'VIDEO_ID_2' with the actual YouTube video ID -->
+   <iframe width="560" height="400" src="https://www.youtube.com/embed/Bkh1pPvUQos?si=XFAe7SocInCmVXrV&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  </div>
+
+<!-- Past Work -->
+<!-- End of Video Gallery -->
+
+<div class="image-gallery">
+  
+  <h1 class="galleryHeading"> Image Porfolio </h1>
+
+  <!-- Gallery Section -->
+  <div class="gallery-container">
+    <div class="gallery-item"><img src="bgg.jpeg" alt="Image 1"></div>
+    <div class="gallery-item"><img src="bg2.jpg" alt="Image 2"></div>
+    <div class="gallery-item"><img src="img/5.jpeg" alt="Image 3"></div>
+    <div class="gallery-item"><img src="img/3.jpeg" alt="Image 1"></div>
+    <div class="gallery-item"><img src="img/4.jpeg" alt="Image 2"></div>
+    <div class="gallery-item"><img src="img/5.jpeg" alt="Image 3"></div>  
+  </div>
+
+</div>
+
+
+<!-- Gallery Section -->
+
+<div class="popup-image">
+  <span>&times;</span>
+      <div class="gallery-item"><img src="bgg.jpeg"  alt="Image 1"></div>
+
+</div>
+
+
+<!-- video portfolio Section -->
+  <div class="vidContainer">
+    <h1> Video Portfolio </h1>
+
+    <div class="row">
+      <div class="col">
+        <div class="feature-img">
+          <img src="img/stage.jpg" width="100%" alt="feature-img">
+          <img src="img/play.png" class="play-btn" alt="play-btn" onclick="playVideo('video.mp4')">
+        </div>
+      </div>
+
+      <div class="col">
+
+        <div class="small-img-row">
+          <div class="small-img">
+             <img src="img/stage.jpg" width="100%" alt="feature-img">
+             <img src="img/play.png" class="play-btn" alt="play-btn" onclick="playVideo('')">
+          </div>
+          <p>Candela at Landmark University</p>
+        </div>
+
+         <div class="small-img-row">
+          <div class="small-img">
+             <img src="img/stage.jpg" width="100%" alt="feature-img">
+             <img src="img/play.png" class="play-btn" alt="play-btn" onclick="playVideo('')">
+          </div>
+          <p>Candela at Landmark University</p>
+        </div>
+
+         <div class="small-img-row">
+          <div class="small-img">
+             <img src="img/stage.jpg" width="100%" alt="feature-img">
+             <img src="img/play.png" class="play-btn" alt="play-btn" onclick="playVideo('')">
+          </div>
+          <p>Candela at Landmark University</p>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+
+  <div class="vidPlayer" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+      <source src="video.mp4 " type="video/mp4">
+    </video>
+    <span class="close-btn" id="closeVideo" onclick="stopVideo()">&times;</span>
+  </div>
+
+<!-- End of Video portfolio Section -->
+
+
+<!-- Footer Section -->
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="newsletter">
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </div>
+
+    <p class="copyright">© 2024 Candela. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Footer Section -->
+ <!-- swiper js -->
+  <script type="text/javascript" src="swiper-bundle.min.js"></script>
+
+<!-- main js code -->
+  <script src="index.js"></script>
+
+  <script>
+    var videoPlayer = document.getElementById('videoPlayer');
+    var myVideo = document.getElementById('myVideo');
+
+    function stopVideo() {
+      videoPlayer.style.display = 'none';
+    }
+
+    function playVideo(file){
+      myVideo.src = file;
+      videoPlayer.style.display = 'block';
+    }
+
+  </script>
+</body>
+</html>
