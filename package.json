@@ -1,0 +1,11 @@
+{
+  "name": "candela-website",
+  "version": "1.0.0",
+  "description": "A Web App that will allow user to view the company schedule, Book appointment.\r Live video integration\r Embed images from drive directly into the website, which changes every 5 minutes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
